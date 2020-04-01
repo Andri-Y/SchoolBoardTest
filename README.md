@@ -3,13 +3,15 @@
 Created using Laravel framework.
 This is a test project.
 
-## Details
+## Starting
 
 Project runs with "php artisan serve" command.
 
 ## Endpoints
 
+*domain/csm?student={id}*
 
+*domain/csmb?student={id}*
 
 
 

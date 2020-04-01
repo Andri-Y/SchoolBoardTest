@@ -14,3 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('csm', "StudentController@getCSMData");
+
+Route::get('csmb', "StudentController@getCSMBData");
