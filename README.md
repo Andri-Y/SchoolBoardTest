@@ -9,9 +9,8 @@ Project runs with "php artisan serve" command.
 
 ## Endpoints
 
-*domain/csm?student={id}*
+*domain/api/csm?student={id}*
 
-*domain/csmb?student={id}*
-
+*domain/api/csmb?student={id}*
 
 
