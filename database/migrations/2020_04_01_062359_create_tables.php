@@ -14,16 +14,16 @@ class CreateTables extends Migration
     public function up()
     {
         Schema::create('students', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name');
-            $table->integer('grade_id')->nullable()->unsigned();
-            $table->foreign('grade_id')
-                ->references('id')->on('grades')->onDelete('cascade');
         });
         //
         Schema::create('grades', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->integer('value');
+            $table->bigInteger('student_id')->nullable()->unsigned();
+            $table->foreign('student_id')
+                ->references('id')->on('students')->onDelete('cascade');
         });
     }
 
